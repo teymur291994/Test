@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Test
+
+  Created by Timur on 9/18/19.
+  
+*/
+
+// Errors
+
+"somethingWentWrongPleaseTryLater" = "Something wrong, please try later";
