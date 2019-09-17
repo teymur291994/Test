@@ -13,6 +13,10 @@
 		3969766D23315E960003A692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3969766B23315E960003A692 /* Main.storyboard */; };
 		3969766F23315E980003A692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3969766E23315E980003A692 /* Assets.xcassets */; };
 		3969767223315E980003A692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3969767023315E980003A692 /* LaunchScreen.storyboard */; };
+		39E9665823318FFD00367637 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39E9665723318FFD00367637 /* Localizable.strings */; };
+		39E9665B233190A100367637 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E96659233190A100367637 /* Strings.swift */; };
+		39E9665C233190A100367637 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9665A233190A100367637 /* Assets.swift */; };
+		39E9665E2331910500367637 /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9665D2331910500367637 /* Scenes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		3969766E23315E980003A692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3969767123315E980003A692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3969767323315E980003A692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E9665723318FFD00367637 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		39E96659233190A100367637 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		39E9665A233190A100367637 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		39E9665D2331910500367637 /* Scenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
 		9830C9502826ECB9A1CCD04C /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD999B4AFE5D7C1D9F45236 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 		DEC6A0A43C92A33D99FDF960 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,14 +69,34 @@
 		3969766623315E960003A692 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				39E9665523318FC900367637 /* Resources */,
 				3969766723315E960003A692 /* AppDelegate.swift */,
 				3969766923315E960003A692 /* ViewController.swift */,
 				3969766B23315E960003A692 /* Main.storyboard */,
-				3969766E23315E980003A692 /* Assets.xcassets */,
 				3969767023315E980003A692 /* LaunchScreen.storyboard */,
 				3969767323315E980003A692 /* Info.plist */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		39E9665523318FC900367637 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39E9665623318FE100367637 /* Helpers */,
+				3969766E23315E980003A692 /* Assets.xcassets */,
+				39E9665723318FFD00367637 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		39E9665623318FE100367637 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				39E9665D2331910500367637 /* Scenes.swift */,
+				39E9665A233190A100367637 /* Assets.swift */,
+				39E96659233190A100367637 /* Strings.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		84AB1F23092257130AD26146 /* Frameworks */ = {
@@ -97,6 +125,7 @@
 			buildPhases = (
 				83FA2CA1850B18FBC2D7E591 /* [CP] Check Pods Manifest.lock */,
 				392712472331787900B1574D /* SwiftLint */,
+				39E9665423318F8200367637 /* SwiftGen */,
 				3969766023315E960003A692 /* Sources */,
 				3969766123315E960003A692 /* Frameworks */,
 				3969766223315E960003A692 /* Resources */,
@@ -148,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3969767223315E980003A692 /* LaunchScreen.storyboard in Resources */,
+				39E9665823318FFD00367637 /* Localizable.strings in Resources */,
 				3969766F23315E980003A692 /* Assets.xcassets in Resources */,
 				3969766D23315E960003A692 /* Main.storyboard in Resources */,
 			);
@@ -173,6 +203,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		39E9665423318F8200367637 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT\"/PrebuildScripts/SwiftGen/runswiftgen.sh \"$SRCROOT\" \"$PODS_ROOT\"\n";
 		};
 		83FA2CA1850B18FBC2D7E591 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -204,6 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3969766A23315E960003A692 /* ViewController.swift in Sources */,
+				39E9665B233190A100367637 /* Strings.swift in Sources */,
+				39E9665E2331910500367637 /* Scenes.swift in Sources */,
+				39E9665C233190A100367637 /* Assets.swift in Sources */,
 				3969766823315E960003A692 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

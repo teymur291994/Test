@@ -5,6 +5,7 @@ inhibit_all_warnings!
 
 def framework_pods
 	pod 'SwiftLint'
+	pod 'SwiftGen', '~> 6.0'
 end
 
 def required_pods
