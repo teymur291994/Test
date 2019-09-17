@@ -3,3 +3,5 @@ line_length:
 - 400 # error
 excluded:
 - Pods
+disabled_rules:
+- trailing_whitespace
