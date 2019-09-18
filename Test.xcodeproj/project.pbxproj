@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,21 @@
 		3969766D23315E960003A692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3969766B23315E960003A692 /* Main.storyboard */; };
 		3969766F23315E980003A692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3969766E23315E980003A692 /* Assets.xcassets */; };
 		3969767223315E980003A692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3969767023315E980003A692 /* LaunchScreen.storyboard */; };
+		39E9664D2331885F00367637 /* MarvelRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9664C2331885F00367637 /* MarvelRoute.swift */; };
+		39E9664F233189EE00367637 /* NetworkManager+Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9664E233189EE00367637 /* NetworkManager+Marvel.swift */; };
+		39E9665123318A7200367637 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9665023318A7100367637 /* NetworkManager.swift */; };
+		39E9665323318C6100367637 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9665223318C6100367637 /* CustomError.swift */; };
 		39E9665823318FFD00367637 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39E9665723318FFD00367637 /* Localizable.strings */; };
 		39E9665B233190A100367637 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E96659233190A100367637 /* Strings.swift */; };
 		39E9665C233190A100367637 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9665A233190A100367637 /* Assets.swift */; };
 		39E9665E2331910500367637 /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9665D2331910500367637 /* Scenes.swift */; };
+		39E96661233194FD00367637 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E96660233194FD00367637 /* String+Extensions.swift */; };
+		39E966642332826900367637 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E966632332826900367637 /* Comic.swift */; };
+		39E966662332830200367637 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E966652332830200367637 /* Thumbnail.swift */; };
+		39E966682332830F00367637 /* CharactersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E966672332830F00367637 /* CharactersInfo.swift */; };
+		39E9666A2332844700367637 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E966692332844700367637 /* Character.swift */; };
+		39E9666C23328A5700367637 /* MarvelDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9666B23328A5700367637 /* MarvelDate.swift */; };
+		39E9666E23328B6100367637 /* MarvelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9666D23328B6100367637 /* MarvelResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +38,21 @@
 		3969766E23315E980003A692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3969767123315E980003A692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3969767323315E980003A692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E9664C2331885F00367637 /* MarvelRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelRoute.swift; sourceTree = "<group>"; };
+		39E9664E233189EE00367637 /* NetworkManager+Marvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Marvel.swift"; sourceTree = "<group>"; };
+		39E9665023318A7100367637 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		39E9665223318C6100367637 /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		39E9665723318FFD00367637 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		39E96659233190A100367637 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		39E9665A233190A100367637 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		39E9665D2331910500367637 /* Scenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
+		39E96660233194FD00367637 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		39E966632332826900367637 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		39E966652332830200367637 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		39E966672332830F00367637 /* CharactersInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersInfo.swift; sourceTree = "<group>"; };
+		39E966692332844700367637 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		39E9666B23328A5700367637 /* MarvelDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDate.swift; sourceTree = "<group>"; };
+		39E9666D23328B6100367637 /* MarvelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelResponse.swift; sourceTree = "<group>"; };
 		9830C9502826ECB9A1CCD04C /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD999B4AFE5D7C1D9F45236 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 		DEC6A0A43C92A33D99FDF960 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3927124C2331841C00B1574D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				39E9665223318C6100367637 /* CustomError.swift */,
+				3927124D2331842300B1574D /* Managers */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3927124D2331842300B1574D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				39E9665023318A7100367637 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		39271250233187C700B1574D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				39E9664B233187E600367637 /* Comics */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		3969765B23315E960003A692 = {
 			isa = PBXGroup;
 			children = (
@@ -69,7 +116,11 @@
 		3969766623315E960003A692 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				39E966622332825600367637 /* Models */,
+				39E9665F233194E400367637 /* Extensions */,
 				39E9665523318FC900367637 /* Resources */,
+				39271250233187C700B1574D /* API */,
+				3927124C2331841C00B1574D /* Helpers */,
 				3969766723315E960003A692 /* AppDelegate.swift */,
 				3969766923315E960003A692 /* ViewController.swift */,
 				3969766B23315E960003A692 /* Main.storyboard */,
@@ -77,6 +128,15 @@
 				3969767323315E980003A692 /* Info.plist */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		39E9664B233187E600367637 /* Comics */ = {
+			isa = PBXGroup;
+			children = (
+				39E9664C2331885F00367637 /* MarvelRoute.swift */,
+				39E9664E233189EE00367637 /* NetworkManager+Marvel.swift */,
+			);
+			path = Comics;
 			sourceTree = "<group>";
 		};
 		39E9665523318FC900367637 /* Resources */ = {
@@ -97,6 +157,27 @@
 				39E96659233190A100367637 /* Strings.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		39E9665F233194E400367637 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				39E96660233194FD00367637 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		39E966622332825600367637 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39E966632332826900367637 /* Comic.swift */,
+				39E966692332844700367637 /* Character.swift */,
+				39E966652332830200367637 /* Thumbnail.swift */,
+				39E966672332830F00367637 /* CharactersInfo.swift */,
+				39E9666B23328A5700367637 /* MarvelDate.swift */,
+				39E9666D23328B6100367637 /* MarvelResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		84AB1F23092257130AD26146 /* Frameworks */ = {
@@ -129,6 +210,7 @@
 				3969766023315E960003A692 /* Sources */,
 				3969766123315E960003A692 /* Frameworks */,
 				3969766223315E960003A692 /* Resources */,
+				8B97CD0AE33CE517A76C778D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +326,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8B97CD0AE33CE517A76C778D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -251,11 +350,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E96661233194FD00367637 /* String+Extensions.swift in Sources */,
+				39E9666C23328A5700367637 /* MarvelDate.swift in Sources */,
+				39E9664F233189EE00367637 /* NetworkManager+Marvel.swift in Sources */,
+				39E966662332830200367637 /* Thumbnail.swift in Sources */,
+				39E9664D2331885F00367637 /* MarvelRoute.swift in Sources */,
+				39E9666E23328B6100367637 /* MarvelResponse.swift in Sources */,
+				39E9665123318A7200367637 /* NetworkManager.swift in Sources */,
 				3969766A23315E960003A692 /* ViewController.swift in Sources */,
 				39E9665B233190A100367637 /* Strings.swift in Sources */,
 				39E9665E2331910500367637 /* Scenes.swift in Sources */,
+				39E966642332826900367637 /* Comic.swift in Sources */,
+				39E9666A2332844700367637 /* Character.swift in Sources */,
 				39E9665C233190A100367637 /* Assets.swift in Sources */,
+				39E966682332830F00367637 /* CharactersInfo.swift in Sources */,
 				3969766823315E960003A692 /* AppDelegate.swift in Sources */,
+				39E9665323318C6100367637 /* CustomError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
