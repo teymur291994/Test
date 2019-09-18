@@ -9,7 +9,14 @@ def framework_pods
 	pod 'Moya', '~> 13.0'
 end
 
+def helper_pods
+	pod 'Kingfisher', '~> 5.0'
+	pod 'Then'
+	pod 'SnapKit', '~> 5.0.0'
+end
+
 def required_pods
+	helper_pods
 	framework_pods
 end
 

@@ -9,3 +9,7 @@
 // Errors
 
 "somethingWentWrongPleaseTryLater" = "Something wrong, please try later";
+
+// Comics
+
+"comicsPageEmptyData" = "Sorry, but haven't comics yet";

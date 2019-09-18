@@ -11,6 +11,8 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
+  /// Sorry, but haven't comics yet
+  internal static let comicsPageEmptyData = L10n.tr("Localizable", "comicsPageEmptyData")
   /// Something wrong, please try later
   internal static let somethingWentWrongPleaseTryLater = L10n.tr("Localizable", "somethingWentWrongPleaseTryLater")
 }
