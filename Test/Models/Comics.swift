@@ -1,11 +1,11 @@
 //
-//  Comic.swift
+//  Comics.swift
 //  Test
 //
 //  Created by Timur on 9/18/19.
 //
 
-struct Comic: Codable {
+struct Comics: Codable {
     let id: Int
     let title: String
     let description: String?

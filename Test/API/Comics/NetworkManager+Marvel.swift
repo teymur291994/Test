@@ -8,7 +8,7 @@
 typealias VoidToVoid = () -> Void?
 
 extension NetworkManager {
-    func comics(onSuccess success:  @escaping (_ marvelResponse: MarvelResponse<Comic>?) -> Void, onFailure failure: @escaping ErrorToVoid) {
+    func comics(onSuccess success:  @escaping (_ marvelResponse: MarvelResponse<Comics>?) -> Void, onFailure failure: @escaping ErrorToVoid) {
         requestObject(MarvelRoute.comics, onSuccess: success, onFailure: failure)
     }
 }
