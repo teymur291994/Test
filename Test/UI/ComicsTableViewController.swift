@@ -12,6 +12,9 @@ class ComicsTableViewController: BaseViewController {
 
     @IBOutlet private weak var tableView: UITableView!
     private var listOfComics = [Comics]()
+    private var refreshControl = UIRefreshControl().then {
+        $0.addTarget(self, action: #selector(refreshControlValueChanged), for: .valueChanged)
+    }
 
     // MARK: - override
 
@@ -29,11 +32,15 @@ class ComicsTableViewController: BaseViewController {
 
     private func setupViewHierarchy() {
         tableView.registerCell(ComicsTableViewCell.self)
+        tableView.refreshControl = refreshControl
     }
 
     private func requestComics() {
-        showActivityIndicator(true)
+        if !refreshControl.isRefreshing {
+            showActivityIndicator(true)
+        }
         NetworkManager.shared.comics(onSuccess: { [weak self] (marvelResponse) in
+            self?.refreshControl.endRefreshing()
             self?.showActivityIndicator(false)
             guard let comics = marvelResponse?.data.results else { return }
             self?.listOfComics = comics
@@ -54,6 +61,12 @@ class ComicsTableViewController: BaseViewController {
                           in: tableView.backgroundView,
                           message: L10n.comicsPageEmptyData)
         tableView.reloadData()
+    }
+
+    // MARK: - actions
+
+    @objc private func refreshControlValueChanged() {
+        requestComics()
     }
 }
 
